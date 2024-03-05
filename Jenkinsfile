@@ -9,8 +9,8 @@ pipeline {
                 echo ${BUILD_NUMBER}
                 ls
                 '''
-              }
+            }
         }
-    }  
-    
+    }
 }
+
