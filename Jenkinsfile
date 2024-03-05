@@ -5,31 +5,12 @@ pipeline {
         stage('build') {
             steps {
                 echo 'build'
-                sh 'ls'
-            }
-        }
-         stage('package') {
-            steps {
-                echo 'package'
                 sh '''
-                    echo ${BUILD_NUMBER}
-                    echo ${SYS_ADMIN}
+                echo ${BUILD_NUMBER}
+                ls
                 '''
-            }
+              }
         }
-         stage('test') {
-            steps {
-                echo 'test'
-                sh "pwd"
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploy'
-                sh """
-                    cat --help
-                """
-            }
-        }
-    }
+    }  
+    
 }
