@@ -7,7 +7,6 @@ pipeline {
                 echo 'build'
                 sh '''
                 echo ${BUILD_NUMBER}
-                ls
                 '''
             }
         }
